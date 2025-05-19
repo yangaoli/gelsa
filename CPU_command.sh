@@ -1,8 +1,8 @@
 #!/bin/bash
 
-apt-get update && apt-get install -y wget sudo python3.10 python3.10-dev python3-pip
-sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.10 1
-pip install scipy statsmodels pandas numpy argparse
+# apt-get update && apt-get install -y wget sudo python3.10 python3.10-dev python3-pip
+# sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.10 1
+# pip install scipy statsmodels pandas numpy argparse
 
 sudo pip uninstall lsa
 sudo rm -rf /usr/local/lib/python3.10/dist-packages/lsa-1.0.2-py3.10.egg
