@@ -34,7 +34,7 @@ Firstly, in Linux install the prerequisites: C++ (build-essential), Python(dev).
 
 Then, download and unzip the latest main branch to the gelsa folder.
 
-    ::
+    
 
         gelsa>  bash CPU_command.sh                                                                                     # make lsa package and computate by using cpu
         gelsa>  python in_out_data.py &&  lsa_compute test.txt result -d 10 -r 1 -s 50 -p theo -T 0.1                   # a test script is available
