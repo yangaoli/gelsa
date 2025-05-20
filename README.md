@@ -62,11 +62,11 @@ The following executable will be available from your python scripts directory (t
 
 NOTES
 ----------------------    
-    The lsa and lta computation capacities (lsa/lta/permutation) of eLSA and new computation capacities (ddlsa/bblsa/stlta) are available through GeLSA
+The lsa and lta computation capacities (lsa/lta/permutation) of eLSA and new computation capacities (ddlsa/bblsa/stlta) are available through GeLSA
 
 CONTACT
 ----------------------
-    lcxia at scut dot edu dot cn
+lcxia at scut dot edu dot cn
 
 CITATIONS
 ----------------------
