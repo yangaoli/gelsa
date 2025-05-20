@@ -62,9 +62,8 @@ setup(name="lsa",
     packages=find_packages(exclude=['ez_setup', 'test', 'doc']),
     include_package_data=True,
     zip_safe=False,
-    python_requires='>=3.8',  # 正确声明 Python 解释器版本要求
-    install_requires=["numpy >= 1.0", "scipy >= 0.6"],  # 仅保留实际包依赖
-    # install_requires=["python >= 3.8","numpy >= 1.0","scipy >= 0.6"],
+    python_requires='>=3.8', 
+    install_requires=["numpy >= 1.0", "scipy >= 0.6"], 
     provides=['lsa'],
     py_modules = ['lsa.lsalib'],
     cmdclass = {'build': my_build},

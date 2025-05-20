@@ -20,42 +20,61 @@ METHODS
 -------------
 
 
-
-
 DOCKER (Platform Independent and Preferred)
 ---------------------------------------------
 
 
 INSTALL
 -----------------
+    (1). # for use #
+
+    Currently, the package is maintained only for Linux (Ubuntu) due to compilation requirements for the core computational components.
+
+    Firstly, in Linux install the prerequisites: C++ (build-essential), Python(dev).
+
+    Then, download and unzip the latest main branch to the gelsa folder.
+
+    ::
+
+        gelsa>  bash CPU_command.sh                                                                                     # make lsa package and computate by using cpu
+        gelsa>  python in_out_data.py &&  lsa_compute test.txt result -d 10 -r 1 -s 50 -p theo -T 0.1                   # a test script is available
+
+        gelsa>  bash GPU_command.sh                                                                                     # To create an LSA package that can utilize GPU acceleration when available(Ubuntu 22.04 Required)
+        gelsa>  python in_out_data.py &&  lsa_compute test.txt result -d 10 -r 1 -s 50 -p theo -T 0.1                   # a test script is available
+
+
+    (2). # for development #
+
+    GeLSA is open source and your contributions are greatly welcome.
+
+    First, use git to fork a copy of gelsa on github.com:
+
+    ::
+        
+        gelsa> git clone ssh://git@github.com/your/gelsa gelsa
+
+    Then, make your edits and create a pull request to merge back.
+
 
 EXECUTABLES
 --------------------
+  The following executable will be available from your python scripts directory (typically already in $PATH).
 
   ::
 
     lsa_compute                       # for LSA/MBBLSA/DDLSA/LTA/STLTA/PERMUTAION  computation
 
-
 NOTES
-----------------------
-    
+----------------------    
     The lsa and lta computation capacities (lsa/lta/permutation) of eLSA and new computation capacities (ddlsa/bblsa/stlta) are available through GeLSA
-
-
 
 CONTACT
 ----------------------
-
     lcxia at scut dot edu dot cn
 
 CITATIONS
 ----------------------
-Please cite the references 1 and 2 if any part of the ELSA python package was used in your study. Please also cite 3 if local trend analysis (LTA) was used in your study.  
-Please also cite the reference 4 and 5 if you used the old LSA R script, which is no loger maintained.
-Please also cite 6 if Moving Block Bootstrap LSA (MBBLSA) was used in your study. 
-Please also cite 7 if Data-Driven LSA (DDLSA) was used in your study. 
-Please also cite 8 if Steady-state Theory Local Trend Analysis (STLTA) was used in your study. 
+Please cite the references 1 and 2 if any part of the ELSA python package was used in your study.Please also cite 3 if local trend analysis (LTA) was used in your study. Please also cite the reference 4 and 5 if you used the old LSA R script, which is no loger maintained. Please also cite 6 if Moving Block Bootstrap LSA (MBBLSA) was used in your study. Please also cite 7 if Data-Driven LSA (DDLSA) was used in your study. Please also cite 8 if Steady-state Theory Local Trend Analysis (STLTA) was used in your study. 
 
 
     1. Li C Xia, Dongmei Ai, Jacob Cram, Jed A Fuhrman, Fengzhu Sun. Efficient Statistical Significance Approximation for Local Association Analysis of High-Throughput Time Series Data. Bioinformatics 2013, 29(2):230-237. (https://doi.org/10.1093/bioinformatics/bts668)
