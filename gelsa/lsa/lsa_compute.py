@@ -351,34 +351,17 @@ def main():
     for i in range(0,1):
         print(lsaP[i])
     '''
-
     
-    # with open(resultFile, "r") as f_in, open(resultFile+".lsa", "w") as f_out:
-
-
+    # result_path = os.path.abspath(resultFile.name)  # 如果是文件对象
+    # output_path = result_path + ".lsa"
+    # with open(result_path, "r") as f_in, open(output_path, "w") as f_out:
+    #     for line in f_in:
+    #         data = line.strip().split(",")
+    #         formatted_line = ""
+    #         for item in data:
+    #             formatted_line += "{:<30}".format(item)
+    #         f_out.write(formatted_line + "\n")
     
-    # result_path = resultFile.name  # 获取文件对象的路径
-    
-    result_path = os.path.abspath(resultFile.name)  # 如果是文件对象
-
-
-    output_path = result_path + ".lsa"
-    
-
-    with open(result_path, "r") as f_in, open(output_path, "w") as f_out:
-        for line in f_in:
-            data = line.strip().split(",")
-            formatted_line = ""
-            for item in data:
-                formatted_line += "{:<30}".format(item)
-            f_out.write(formatted_line + "\n")
-
-
-
-
-
-
-
     
     # print("finishing up...", file=sys.stderr)
     end_time=time.time()
