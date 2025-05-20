@@ -1,12 +1,6 @@
-.. |Pipeline| image:: ./images/fig2.jpg
-   :alt: fig2.jpg
-   :height: 450px
-   :width: 540px
+<img src="./images/fig2.jpg" alt="fig2.jpg" width="540" height="450" />
 
-.. |elaPipeline| image:: ./images/fig4.jpg
-   :alt: fig4.jpg
-   :height: 450px
-   :width: 540px
+<img src="./images/fig4.jpg" alt="fig4.jpg" width="540" height="450" />
 
 
 
