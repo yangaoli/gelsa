@@ -1,3 +1,14 @@
+.. |Pipeline| image:: ./images/fig2.jpg
+   :alt: fig2.jpg
+   :height: 450px
+   :width: 540px
+
+.. |elaPipeline| image:: ./images/fig4.jpg
+   :alt: fig4.jpg
+   :height: 450px
+   :width: 540px
+
+
 
 GeLSA: a GPU-accelerated Local Similarity Analysis Tool
 =========================================================
@@ -18,6 +29,21 @@ To address these challenges, we developed GeLSA, a parallel computing tool desig
 
 METHODS
 -------------
+
+|Pipeline|
+
+Figure 1. The analysis workflow of Local Similarity Analysis (LSA) tools. Users start with raw data (matrices of time series) as input and specify their requirements as parameters. The LSA tools subsequently F-transform and normalize the raw data and then calculate the Local Similarity (LS) Scores and the Pearson’s Correlation Coefficients. The tools then assess the statistical significance (P-values) of these correlation statistics using permutation test and filter out insignificant results. Finally, the tools construct a partially directed association network from significant associations.
+
+|elaPipeline|
+
+Figure 2. Liquid Association / Mediated correlation and example Cytoscape diagrams for all liquid association types of factors X, Y and Z: (A) High Z level enhances the positive correlation between X and Y; (B) Low Z level enhances the negative correlation between X and Y; (C) Low Z level enhances the positive correlation between X and Y; (D) High Z level enhances the negative correlation between X and Y. And (E) A flowchart for incorporating Liquid Association (LA) with Local Similarity (LS) Analysis (LSA). First we use LSA to find candidate local and without time-delayed associations between factors X and Y. The results were filtered based on p-values, q-values and effect (LS score). Then, given the significant LSA factors X and Y, we compute LA score to scout any environmental/OTU factors to discover potential mediating factor Z. Next, a permutation test for liquid association is performed and the results were filtered based on p-values, q-values and effect (LA score) to remove insignificant triplets. Finally, we use the software Cytoscape to visualize the results.
+
+
+
+
+
+
+
 
 
 DOCKER (Platform Independent and Preferred)
