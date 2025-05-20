@@ -26,13 +26,13 @@ DOCKER (Platform Independent and Preferred)
 
 INSTALL
 -----------------
-    (1). # for use #
+(1). # for use #
 
-    Currently, the package is maintained only for Linux (Ubuntu) due to compilation requirements for the core computational components.
+Currently, the package is maintained only for Linux (Ubuntu) due to compilation requirements for the core computational components.
 
-    Firstly, in Linux install the prerequisites: C++ (build-essential), Python(dev).
+Firstly, in Linux install the prerequisites: C++ (build-essential), Python(dev).
 
-    Then, download and unzip the latest main branch to the gelsa folder.
+Then, download and unzip the latest main branch to the gelsa folder.
 
     ::
 
@@ -43,11 +43,11 @@ INSTALL
         gelsa>  python in_out_data.py &&  lsa_compute test.txt result -d 10 -r 1 -s 50 -p theo -T 0.1                   # a test script is available
 
 
-    (2). # for development #
+(2). # for development #
 
-    GeLSA is open source and your contributions are greatly welcome.
+GeLSA is open source and your contributions are greatly welcome.
 
-    First, use git to fork a copy of gelsa on github.com:
+First, use git to fork a copy of gelsa on github.com:
 
     ::
         
