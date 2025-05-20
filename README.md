@@ -34,15 +34,20 @@ EXECUTABLES
 
   ::
 
-    lsa_compute                       # for LSA/LTA computation
+    lsa_compute                       # for LSA/MBBLSA/DDLSA/LTA/STLTA/PERMUTAION  computation
 
+
+NOTES
+----------------------
+    
+    The lsa and lta computation capacities (lsa/lta/permutation) of eLSA and new computation capacities (ddlsa/bblsa/stlta) are available through GeLSA
 
 
 
 CONTACT
 ----------------------
 
-    fsun at usc dot edu and/or lixia at stanford dot edu
+    lcxia at scut dot edu dot cn
 
 CITATIONS
 ----------------------
